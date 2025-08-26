@@ -1,9 +1,9 @@
 # math
 
+```
 $ pip3 install gmpy2
 $ python3 rpe.py
 
-```
 Solving equation:
     x*x*x - 6*x*x + 11*x - 6 = 0
     Refactored as (x - 1)*(x - 2)*(x - 3) = 0

@@ -1,14 +1,4 @@
-# rpe.py - a solver for real polynomial equations by
-#       Werner Fouche
-# (werner.fouche@gmail.com)
-#
-# Tested on 64bit Windows 7 with:
-#
-#  python-2.7.13.amd64.exe           (Python 2.7 install to c:\Python27
-#  gmpy2-2.0.8.win-amd64-py2.7.exe   (GMPY2 library for Python 2.7)
-#
-# Run as c:\Python27\python.exe  rpe.py
-#
+# rpe.py - a solver for polynomial equations
 
 import gmpy2 as gmpy
 import sys
