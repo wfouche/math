@@ -46,22 +46,21 @@ def F(w):
     F_n.append(to_float("1.0"))
 
     # Compute successive values of the Fn derived recursive function.
-    n = N
     while True:
         z = to_float("0.0")
         for i in range(N):
-            z += w[i] * F_n[n-i-1]
+            z += w[i] * F_n[N-i-1]
         F_n.append(z)
         yield z
-        n += 1
- 
+        del F_n[0]
+
 # ------------------------------------------------------------------------------
  
 def reduce(a, x):
     # Remove root "x".
     b = []
     b.append("%.6f"%(to_float(a[0])))
-    for i in range(1,len(a)-1,1):
+    for i in xrange(1,len(a)-1,1):
         b.append(to_float(a[i]) + to_float(b[i-1])*x)
         b[i] = "%.6f"%(b[i])
     return b
