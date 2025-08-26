@@ -10,17 +10,13 @@
 # ///
 
 import org.apfloat.Apfloat as Apfloat
-import org.apfloat.ApfloatMath as ApfloatMath
 
-#import gmpy2 as gmpy
 import sys
 
 # ------------------------------------------------------------------------------
 
 def to_float(x):
-    # return float(x)
     # use high-precision floating-point numbers
-    # return gmpy.mpfr(x, 300)
     return Apfloat(x, 150)
 
 # ------------------------------------------------------------------------------
